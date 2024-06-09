@@ -1,0 +1,48 @@
+.animated-text {
+    font-family: 'Librestile', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    margin: 0 50px;
+    text-shadow: 2px 2px 0 rgba(158, 191, 38, 1), 
+                -2px -2px 0 rgba(158, 191, 38, 1), 
+                -2px 2px 0 rgba(158, 191, 38, 1), 
+                2px -2px 0 rgba(158, 191, 38, 1);
+}
+
+.rotating-image {
+    position: absolute;
+    top: 50%; /* Adjust positioning as needed */
+    left: 50%; /* Adjust positioning as needed */
+    transform: translate(-50%, -50%);
+    animation: rotate 20s linear infinite; /* Adjust duration and timing function as needed */
+    z-index: 1; /* Ensure the image is in front of other content */
+    height: 90vh;
+    width: 90vh;
+}
+  
+  /* Keyframes for rotating animation */
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.slide-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slide 20s linear infinite;
+    z-index: 0; /* Ensure text is behind the image */
+}
+  
+@keyframes slide {
+0% {
+    transform: translateX(0%);
+}
+100% {
+    transform: translateX(-20%);
+}
+}
