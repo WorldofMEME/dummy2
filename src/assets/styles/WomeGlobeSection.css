@@ -16,9 +16,20 @@
     left: 50%; /* Adjust positioning as needed */
     transform: translate(-50%, -50%);
     animation: rotate 20s linear infinite; /* Adjust duration and timing function as needed */
-    z-index: 1; /* Ensure the image is in front of other content */
+    z-index: 4; /* Ensure the image is in front of other content */
     height: 90vh;
     width: 90vh;
+}
+
+.rotating-image-mobile {
+    position: absolute;
+    top: 50%; /* Adjust positioning as needed */
+    left: 50%; /* Adjust positioning as needed */
+    transform: translate(-50%, -50%);
+    animation: rotate 20s linear infinite; /* Adjust duration and timing function as needed */
+    z-index: 4; /* Ensure the image is in front of other content */
+    height: 50vh;
+    width: 50vh;
 }
   
   /* Keyframes for rotating animation */
@@ -35,14 +46,32 @@
     display: inline-block;
     white-space: nowrap;
     animation: slide 20s linear infinite;
-    z-index: 0; /* Ensure text is behind the image */
+    z-index: 3; /* Ensure text is behind the image */
 }
   
 @keyframes slide {
-0% {
-    transform: translateX(0%);
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-20%);
+    }
 }
-100% {
-    transform: translateX(-20%);
+
+.helloworld-text {
+    font-family: 'Librestile', sans-serif;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    margin: 0 50px;
+    text-shadow: 2px 2px 0 rgba(161, 161, 161, 1), 
+                -2px -2px 0 rgba(161, 161, 161, 1), 
+                -2px 2px 0 rgba(161, 161, 161, 1), 
+                2px -2px 0 rgba(161, 161, 161, 1);
 }
+
+.helloworldbg{
+    z-index: 2;
+}
+.dotBg {
+    z-index: 2;
 }
