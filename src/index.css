@@ -2,9 +2,19 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
   font-family: 'Librestile';
   src: url('./assets/fonts/LibrestileExtBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+}
+
+.Montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Librestile{
+  font-family: 'Librestile', sans-serif;
 }
