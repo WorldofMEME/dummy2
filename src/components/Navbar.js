@@ -4,6 +4,7 @@ import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { FaXTwitter, FaDiscord } from 'react-icons/fa6';
 import { FaTelegramPlane, FaSearch } from "react-icons/fa";
 import { CgMenuRightAlt } from "react-icons/cg";
+import logo from "../assets/images/logo.svg"
 
 const navigation = [
   { name: "Collection", href: "#", current: true },
@@ -37,16 +38,17 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                    src={logo}
                     alt="Workflow"
                   />
                   <img
                     className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                    src={logo}
                     alt="Workflow"
+                    width={30}
                   />
                 </div>
-                <div className="hidden sm:block sm:ml-6">
+                {/* <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
@@ -64,40 +66,40 @@ export default function Navbar() {
                       </a>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="hidden sm:flex absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
                   <FaXTwitter size={20} />
                 </button>
                 <button
                   type="button"
-                  className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
                   <FaDiscord size={20} />
                 </button>
                 <button
                   type="button"
-                  className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
                   <FaTelegramPlane size={20} />
                 </button>
                 <button
                   type="button"
-                  className="flex me-3 w-72 items-center justify-between py-2.5 px-5 text-sm font-medium text-gray-300 focus:outline-none bg-white rounded-full border border-gray-300 hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  className="flex me-3 w-72 items-center justify-between py-2.5 px-5 text-sm font-medium text-gray-300 focus:outline-none bg-white rounded-full border border-gray-300 hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
                   <span>Search</span>
                   <FaSearch size={20} className="ml-2" />
                 </button>
-                <button
+                {/* <button
                   type="button"
-                  className="py-2.5 px-5 me-2 text-sm font-medium text-black focus:outline-none bg-white rounded-full border border-black hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  className="py-2.5 px-5 me-2 text-sm font-medium text-black focus:outline-none bg-white rounded-full border border-black hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                   >
                     Connect Wallet
-                </button>
+                </button> */}
 
                 {/* Profile dropdown */}
                 {/* <Menu as="div" className="ml-3 relative">
@@ -169,7 +171,7 @@ export default function Navbar() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
+              {/* {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
@@ -184,7 +186,36 @@ export default function Navbar() {
                 >
                   {item.name}
                 </Disclosure.Button>
-              ))}
+              ))} */}
+              <Disclosure.Button>
+                <div>
+                  <button
+                    type="button"
+                    className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                  >
+                    <FaXTwitter size={20} />
+                  </button>
+                  <button
+                    type="button"
+                    className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                  >
+                    <FaDiscord size={20} />
+                  </button>
+                  <button
+                    type="button"
+                    className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                  >
+                    <FaTelegramPlane size={20} />
+                  </button>
+                  <button
+                    type="button"
+                    className="flex me-3 w-72 items-center justify-between py-2.5 px-5 text-sm font-medium text-gray-300 focus:outline-none bg-white rounded-full border border-gray-300 hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                  >
+                    <span>Search</span>
+                    <FaSearch size={20} className="ml-2" />
+                  </button>
+                </div>
+              </Disclosure.Button>
             </div>
           </Disclosure.Panel>
         </>
