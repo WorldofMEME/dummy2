@@ -1,77 +1,96 @@
-.animated-text {
-    font-family: 'Librestile', sans-serif;
-    font-size: 80px;
-    font-weight: bold;
-    color: hsl(0, 0%, 100%);
-    margin: 0 50px;
-    text-shadow: 2px 2px 0 rgba(158, 191, 38, 1), 
-                -2px -2px 0 rgba(158, 191, 38, 1), 
-                -2px 2px 0 rgba(158, 191, 38, 1), 
-                2px -2px 0 rgba(158, 191, 38, 1);
+.womeglobe-section .video-container,
+.womeglobe-section .video-container-mobile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 6; /* Highest z-index to ensure the video is on top */
 }
 
-.rotating-image {
-    position: absolute;
-    top: 50%; /* Adjust positioning as needed */
-    left: 50%; /* Adjust positioning as needed */
-    transform: translate(-50%, -50%);
-    animation: rotate 20s linear infinite; /* Adjust duration and timing function as needed */
-    z-index: 4; /* Ensure the image is in front of other content */
-    height: 90vh;
-    width: 90vh;
+.womeglobe-section .video-globe,
+.womeglobe-section .video-globe-mobile {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the video maintains aspect ratio and is fully visible */
+  z-index: 6; /* Ensure the video is on top */
 }
 
-.rotating-image-mobile {
-    position: absolute;
-    top: 50%; /* Adjust positioning as needed */
-    left: 50%; /* Adjust positioning as needed */
-    transform: translate(-50%, -50%);
-    animation: rotate 20s linear infinite; /* Adjust duration and timing function as needed */
-    z-index: 4; /* Ensure the image is in front of other content */
-    height: 50vh;
-    width: 50vh;
+.womeglobe-section .animated-text {
+  font-family: 'Librestile', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+  margin: 0 50px;
+  text-shadow: 2px 2px 0 rgba(158, 191, 38, 1),
+    -2px -2px 0 rgba(158, 191, 38, 1),
+    -2px 2px 0 rgba(158, 191, 38, 1),
+    2px -2px 0 rgba(158, 191, 38, 1);
+  z-index: 4; /* Ensure the text is behind the video */
 }
-  
-  /* Keyframes for rotating animation */
+
+.womeglobe-section .rotating-image,
+.womeglobe-section .rotating-image-mobile {
+  position: absolute;
+  top: 50%; /* Adjust positioning as needed */
+  left: 50%; /* Adjust positioning as needed */
+  transform: translate(-50%, -50%);
+  animation: rotate 20s linear infinite; /* Adjust duration and timing function as needed */
+  z-index: 5; /* Ensure the image is behind the video */
+}
+
+.womeglobe-section .rotating-image {
+  height: 90vh;
+  width: 90vh;
+}
+
+.womeglobe-section .rotating-image-mobile {
+  height: 50vh;
+  width: 50vh;
+}
+
+/* Keyframes for rotating animation */
 @keyframes rotate {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
-.slide-text {
-    display: inline-block;
-    white-space: nowrap;
-    animation: slide 20s linear infinite;
-    z-index: 3; /* Ensure text is behind the image */
+.womeglobe-section .slide-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slide 20s linear infinite;
+  z-index: 4; /* Ensure text is behind the video */
 }
-  
+
 @keyframes slide {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-20%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
 }
 
-.helloworld-text {
-    font-family: 'Librestile', sans-serif;
-    font-weight: bold;
-    color: hsl(0, 0%, 100%);
-    margin: 0 50px;
-    text-shadow: 2px 2px 0 rgba(161, 161, 161, 1), 
-                -2px -2px 0 rgba(161, 161, 161, 1), 
-                -2px 2px 0 rgba(161, 161, 161, 1), 
-                2px -2px 0 rgba(161, 161, 161, 1);
+.womeglobe-section .helloworld-text {
+  font-family: 'Librestile', sans-serif;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+  margin: 0 50px;
+  text-shadow: 2px 2px 0 rgba(161, 161, 161, 1),
+    -2px -2px 0 rgba(161, 161, 161, 1),
+    -2px 2px 0 rgba(161, 161, 161, 1),
+    2px -2px 0 rgba(161, 161, 161, 1);
+  z-index: 3; /* Ensure the text is behind the video */
 }
 
-.helloworldbg{
-    z-index: 2;
-}
-.dotBg {
-    z-index: 2;
+.womeglobe-section .helloworldbg {
+  z-index: 2;
 }
