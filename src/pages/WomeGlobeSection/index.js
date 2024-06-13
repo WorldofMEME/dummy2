@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import '../../assets/styles/WomeGlobeSection.css';
-import Womeglobe from '../../assets/images/wome_globe.png';
 import Dot from '../../assets/images/Dot.svg';
-import Globe from '../../assets/video/globe_VP100_MP4.mp4';
+import Globe from '../../assets/video/globe_VP100.webm';
 import GlobeGif from "../../assets/video/globeupdated100.gif"
 import MobileBg from '../../assets/images/Mobile_Static_Background.png';
+import { isIOS } from 'react-device-detect';
 
 function WomeGlobeSection() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -38,9 +38,12 @@ function WomeGlobeSection() {
                 alt='grouping-dots'
                 className='absolute w-[200px] md:top-[25rem] lg:top-[25rem] xl:top-[25rem] md:left-[42rem] lg:left-[52rem] xl:left-[64rem]'
               />
-              <div className='video-container'>
-                {/* <video src={Globe} className='video-globe' autoPlay loop muted /> */}
-                <img src={GlobeGif} className='video-globe' alt='globe' />
+              <div className='video-container'>              
+                {isIOS ? (
+                  <img src={GlobeGif} className='video-globe' alt='globe' />
+                ): (
+                  <video src={Globe} className='video-globe' autoPlay loop muted /> 
+                )}
               </div>
               <div className='slide-text'>
                 <span className='animated-text'>Hello World</span>
@@ -71,8 +74,11 @@ function WomeGlobeSection() {
             <div className='absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center overflow-hidden'>
               <img src={MobileBg} alt='mobile-background' className='absolute inset-0 w-full h-full object-cover' />
               <div className='video-container-mobile'>
-                {/* <video src={Globe} className='video-globe-mobile' autoPlay loop muted /> */}
-                <img src={GlobeGif} className='video-globe-mobile' alt='globe' />
+                {isIOS ? (
+                  <img src={GlobeGif} className='video-globe' alt='globe' />
+                ): (
+                  <video src={Globe} className='video-globe' autoPlay loop muted /> 
+                )}
               </div>
             </div>
           </div>
