@@ -170,7 +170,7 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-8 pt-6 pb-3 space-y-1 flex justify-start">
               {/* {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -187,8 +187,8 @@ export default function Navbar() {
                   {item.name}
                 </Disclosure.Button>
               ))} */}
-              <Disclosure.Button>
-                <div>
+              <Disclosure.Button className=''>
+                <div className="flex justify-start items-start">
                   <button
                     type="button"
                     className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
@@ -209,7 +209,7 @@ export default function Navbar() {
                   </button>
                   <button
                     type="button"
-                    className="flex me-3 w-72 items-center justify-between py-2.5 px-5 text-sm font-medium text-gray-300 focus:outline-none bg-white rounded-full border border-gray-300 hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                    className="hidden flex me-3 w-72 items-center justify-between py-2.5 px-5 text-sm font-medium text-gray-300 focus:outline-none bg-white rounded-full border border-gray-300 hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                   >
                     <span>Search</span>
                     <FaSearch size={20} className="ml-2" />
