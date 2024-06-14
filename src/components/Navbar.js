@@ -26,7 +26,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button
-                  className={`inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-transform duration-300 ease-in-out ${
+                  className={`inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-transform duration-300 ease-in-out ${
                     open ? "menu-open" : ""
                   }`}
                 >
@@ -134,7 +134,7 @@ export default function Navbar() {
                 </button>
                 <button
                   type="button"
-                  className="hidden flex me-3 w-72 items-center justify-between py-2.5 px-5 text-sm font-medium text-gray-300 focus:outline-none bg-white rounded-full border border-gray-300 hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                  className="hidden flex me-3 w-72 items-center justify-between py-2.5 px-5 text-sm font-medium text-gray-300 focus:outline-none bg-white rounded-full border border-gray-300 hover:bg-transparent hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
                   <span>Search</span>
                   <FaSearch size={20} className="ml-2" />
