@@ -1,6 +1,6 @@
 @keyframes slideInFromGap {
     0% {
-      transform: translateY(-100px); /* Adjust the value to set the gap */
+      transform: translateY(-5px); /* Adjust this value to set the gap */
       opacity: 0;
     }
     100% {
@@ -15,7 +15,7 @@
       opacity: 1;
     }
     100% {
-      transform: translateY(-100px); /* Adjust the value to set the gap */
+      transform: translateY(-5px); /* Adjust this value to set the gap */
       opacity: 0;
     }
   }
