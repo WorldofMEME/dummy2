@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import '../assets/styles/Navbar.css';
 import { Disclosure } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
 import { FaXTwitter, FaDiscord } from "react-icons/fa6";
@@ -94,8 +95,8 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel
-            className={`sm:hidden absolute z-10 top-16 inset-x-0 bg-white transition-transform duration-500 ease-in-out transform ${
-              open ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+            className={`sm:hidden absolute z-10 top-16 inset-x-0 bg-white border-t-[1px] border-t-slate-400 shadow-md transform ${
+              open ? "animate-slide-in" : "animate-slide-out"
             }`}
           >
             <div className="px-8 pt-6 pb-3 space-y-1 flex flex-col">
@@ -113,31 +114,31 @@ export default function Navbar() {
                   {item.name}
                 </a>
               ))} */}
-              <div className="flex justify-start items-start mt-4">
+              <div className="flex flex-col justify-end items-end mt-4">
                 <button
                   type="button"
                   className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <FaXTwitter size={20} />
+                  <FaXTwitter size={40} />
                 </button>
                 <button
                   type="button"
                   className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <FaDiscord size={20} />
+                  <FaDiscord size={40} />
                 </button>
                 <button
                   type="button"
                   className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <FaTelegramPlane size={20} />
+                  <FaTelegramPlane size={40} />
                 </button>
                 <button
                   type="button"
                   className="hidden flex me-3 w-72 items-center justify-between py-2.5 px-5 text-sm font-medium text-gray-300 focus:outline-none bg-white rounded-full border border-gray-300 hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
                   <span>Search</span>
-                  <FaSearch size={20} className="ml-2" />
+                  <FaSearch size={40} className="ml-2" />
                 </button>
               </div>
             </div>

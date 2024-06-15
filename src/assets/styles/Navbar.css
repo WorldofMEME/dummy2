@@ -1,0 +1,30 @@
+@keyframes slideInFromGap {
+    0% {
+      transform: translateY(-100px); /* Adjust the value to set the gap */
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOutToGap {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px); /* Adjust the value to set the gap */
+      opacity: 0;
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slideInFromGap 0.3s ease-in-out forwards;
+  }
+  
+  .animate-slide-out {
+    animation: slideOutToGap 0.3s ease-in-out forwards;
+  }
+  
