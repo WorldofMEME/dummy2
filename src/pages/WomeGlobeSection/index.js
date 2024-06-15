@@ -82,7 +82,7 @@ function WomeGlobeSection() {
               </div>
             </div>
           </div>
-          <div className='relative mt-[-340px] helloworldbg p-2'>
+          <div className='relative pt-6 mt-[-340px] helloworldbg p-2'>
             <div className='pt-32 pb-32'>
               <div className='Montserrat font-medium text-[20px] leading-[30px] text-[#AAAAAA]'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing
