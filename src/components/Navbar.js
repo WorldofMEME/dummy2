@@ -114,7 +114,7 @@ export default function Navbar() {
                   {item.name}
                 </a>
               ))} */}
-              <div className="flex flex-col justify-end items-end mt-4">
+              <div className="flex justify-start items-end mt-4">
                 <button
                   type="button"
                   className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
