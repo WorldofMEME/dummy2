@@ -57,7 +57,7 @@ export default function Navbar() {
                     alt="Workflow"
                   />
                   <img
-                    className="hidden lg:block h-10 w-10"
+                    className="hidden lg:block h-12 w-12"
                     src={logo}
                     alt="Workflow"
                     width={30}
@@ -66,26 +66,26 @@ export default function Navbar() {
               </div>
               <div className="hidden sm:flex absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
-                  type="button"
-                  className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                  type="hidden button"
+                  className="hidden p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
                   <FaXTwitter size={20} />
                 </button>
                 <button
                   type="button"
-                  className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                  className="hidden p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
                   <FaDiscord size={20} />
                 </button>
                 <button
                   type="button"
-                  className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                  className="hidden p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
                   <FaTelegramPlane size={20} />
                 </button>
                 <button
                   type="button"
-                  className="flex me-3 w-72 items-center justify-between py-2.5 px-5 text-sm font-medium text-gray-300 focus:outline-none bg-white rounded-full border border-gray-300 hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                  className="hidden flex me-3 w-72 items-center justify-between py-2.5 px-5 text-sm font-medium text-gray-300 focus:outline-none bg-white rounded-full border border-gray-300 hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
                   <span>Search</span>
                   <FaSearch size={20} className="ml-2" />

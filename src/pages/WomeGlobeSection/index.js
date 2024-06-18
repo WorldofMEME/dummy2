@@ -5,6 +5,8 @@ import Globe from '../../assets/video/globe_VP100.webm';
 import GlobeGif from "../../assets/video/globeupdated100.gif"
 import MobileBg from '../../assets/images/Mobile_Static_Background.png';
 import { isIOS } from 'react-device-detect';
+import { FaXTwitter, FaDiscord } from "react-icons/fa6";
+import { FaTelegramPlane, FaSearch } from "react-icons/fa";
 
 function WomeGlobeSection() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -67,6 +69,35 @@ function WomeGlobeSection() {
               </div>
             </div>
           </div>
+          <footer className='text-center py-4'>
+            <div className="flex justify-center items-end mt-4">
+              <button
+                type="button"
+                className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+              >
+                <FaXTwitter size={25} />
+              </button>
+              <button
+                type="button"
+                className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+              >
+                <FaDiscord size={25} />
+              </button>
+              <button
+                type="button"
+                className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+              >
+                <FaTelegramPlane size={25} />
+              </button>
+              <button
+                type="button"
+                className="hidden flex me-3 w-72 items-center justify-between py-2.5 px-5 text-sm font-medium text-gray-300 focus:outline-none bg-white rounded-full border border-gray-300 hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+              >
+                <span>Search</span>
+                <FaSearch size={20} className="ml-2" />
+              </button>
+            </div>
+          </footer>
         </>
       ) : (
         <>
