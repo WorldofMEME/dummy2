@@ -69,21 +69,25 @@ export default function Navbar() {
                   type="hidden button"
                   className="hidden p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <a href='https://x.com/WOMEonSOL'>
-                    <FaXTwitter size={25} />
+                  <a href='https://x.com/WOMEonSOL' target='_blank'>
+                    <FaXTwitter size={20} />
                   </a>
                 </button>
                 <button
                   type="button"
                   className="hidden p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <FaDiscord size={20} />
+                  <a href="#">
+                    <FaDiscord size={20} />
+                  </a>
                 </button>
                 <button
                   type="button"
                   className="hidden p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <FaTelegramPlane size={20} />
+                  <a href="#">
+                    <FaTelegramPlane size={20} />
+                  </a>
                 </button>
                 <button
                   type="button"
@@ -121,7 +125,7 @@ export default function Navbar() {
                   type="button"
                   className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <a href='https://x.com/WOMEonSOL'>
+                  <a href='https://x.com/WOMEonSOL' target='_blank'>
                     <FaXTwitter size={25} />
                   </a>
                 </button>
@@ -129,13 +133,17 @@ export default function Navbar() {
                   type="button"
                   className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <FaDiscord size={40} />
+                  <a href="#">
+                    <FaDiscord size={25} />
+                  </a>
                 </button>
                 <button
                   type="button"
                   className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <FaTelegramPlane size={40} />
+                  <a href="#">
+                    <FaTelegramPlane size={25} />
+                  </a>
                 </button>
                 <button
                   type="button"
