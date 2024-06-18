@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../../assets/styles/WomeGlobeSection.css';
 import Dot from '../../assets/images/Dot.svg';
 import Globe from '../../assets/video/globe_VP100.webm';
-import GlobeGif from "../../assets/video/globeupdated100.gif"
+import GlobeGif from "../../assets/video/globedarklightinggifversion.gif"
 import MobileBg from '../../assets/images/Mobile_Static_Background.png';
 import { isIOS } from 'react-device-detect';
 import { FaXTwitter, FaDiscord } from "react-icons/fa6";
@@ -28,9 +28,9 @@ function WomeGlobeSection() {
     <section className='womeglobe-section'>
       {!isMobile ? (
         <>
-          <div className='relative h-[100vh] flex items-center justify-center overflow-hidden bg-[#fffff]'>
+          <div className='relative h-[100vh] flex items-center justify-center overflow-hidden desktop-bg'>
             <div className='absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center overflow-hidden'>
-              <img
+              {/* <img
                 src={Dot}
                 alt='grouping-dots'
                 className='absolute w-[200px] md:top-[10rem] lg:top-[12rem] xl:top-[10rem] md:left-[10rem] lg:left-[15rem] xl:left-[25rem]'
@@ -38,13 +38,14 @@ function WomeGlobeSection() {
               <img
                 src={Dot}
                 alt='grouping-dots'
-                className='absolute w-[200px] md:top-[25rem] lg:top-[25rem] xl:top-[25rem] md:left-[42rem] lg:left-[52rem] xl:left-[64rem]'
-              />
+                className='absolute w-[200px] md:top-[25rem] lg:top-[25rem] xl:top-[27rem] md:left-[42rem] lg:left-[52rem] xl:left-[70rem]'
+              /> */}
               <div className='video-container'>              
                 {isIOS ? (
-                  <img src={GlobeGif} className='video-globe' alt='globe' />
+                  <img src={`${GlobeGif}?${new Date().getTime()}`} className='video-globe-mobile' alt='globe' />
                 ): (
-                  <video src={Globe} className='video-globe' autoPlay loop muted /> 
+                  // <video src={Globe} className='video-globe' autoPlay loop muted /> 
+                  <img src={`${GlobeGif}?${new Date().getTime()}`} className='video-globe' alt='globe' />
                 )}
               </div>
               <div className='slide-text'>
@@ -56,16 +57,16 @@ function WomeGlobeSection() {
               </div>
             </div>
           </div>
-          <div className='bg-[#D9E0EC33] relative mt-[-160px] helloworldbg'>
+          <div className='bg-[#D9E0EC33] relative mt-[-20px] helloworldbg'>
             <div className='py-12'>
               <div className='helloworld-text md:text-[6.125rem] lg:text-[8rem] xl:text-[100px]'>
-                Hello &nbsp;&nbsp;&nbsp;&nbsp; World
+                Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World
               </div>
               <div className='Montserrat font-medium md:text-[20px] lg:text-[22px] xl:text-[28px] md:leading-[28px] lg:leading-[32px] xl:leading-[34.13px] text-[#AAAAAA]'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+                Welcome to a memeverse experience for the masses.
               </div>
               <div className='pt-4 Montserrat font-medium md:text-[16px] lg:text-[18px] xl:text-[20px] md:leading-[20px] lg:leading-[22px] xl:leading-[24.38px] text-[#AAAAAA]'>
-                Mauris lectus libero, luctus malesuada laoreet vitae, pulvinar gravida sapien
+                Begin your journey into the World Of Meme with us.
               </div>
             </div>
           </div>
@@ -75,19 +76,25 @@ function WomeGlobeSection() {
                 type="button"
                 className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
               >
-                <FaXTwitter size={25} />
+                <a href='https://x.com/WOMEonSOL'>
+                  <FaXTwitter size={25} />
+                </a>
               </button>
               <button
                 type="button"
                 className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
               >
-                <FaDiscord size={25} />
+                <a href='#'>
+                  <FaDiscord size={25} />
+                </a>
               </button>
               <button
                 type="button"
                 className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
               >
-                <FaTelegramPlane size={25} />
+                <a href='#'>
+                  <FaTelegramPlane size={25} />
+                </a>
               </button>
               <button
                 type="button"
@@ -116,10 +123,10 @@ function WomeGlobeSection() {
           <div className='relative mt-[-270px] helloworldbg p-2'>
             <div className='pt-32'>
               <div className='Montserrat font-medium text-[20px] leading-[30px] text-[#AAAAAA]'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing
+                Welcome to a memeverse experience for the masses.
               </div>
               <div className='pt-4 Montserrat font-light text-[16px] leading-[24px] text-[#AAAAAA]'>
-                Mauris lectus libero, luctus malesuada laoreet vitae, pulvinar gravida sapien
+                Begin your journey into the World Of Meme with us.
               </div>
             </div>
           </div>

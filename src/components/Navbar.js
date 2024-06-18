@@ -69,7 +69,9 @@ export default function Navbar() {
                   type="hidden button"
                   className="hidden p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <FaXTwitter size={20} />
+                  <a href='https://x.com/WOMEonSOL'>
+                    <FaXTwitter size={25} />
+                  </a>
                 </button>
                 <button
                   type="button"
@@ -119,7 +121,9 @@ export default function Navbar() {
                   type="button"
                   className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <FaXTwitter size={40} />
+                  <a href='https://x.com/WOMEonSOL'>
+                    <FaXTwitter size={25} />
+                  </a>
                 </button>
                 <button
                   type="button"
