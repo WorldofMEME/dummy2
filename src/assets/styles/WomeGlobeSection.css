@@ -13,8 +13,8 @@
 }
 
 .womeglobe-section .video-globe {
-  width: 110%;
-  height: 110%;
+  width: 115%;
+  height: 115%;
   object-fit: contain; /* Ensure the video maintains aspect ratio and is fully visible */
   z-index: 6; /* Ensure the video is on top */
 }

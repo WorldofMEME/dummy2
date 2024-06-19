@@ -120,7 +120,7 @@ function WomeGlobeSection() {
               </div>
             </div>
           </div>
-          <div className='relative mt-[-270px] helloworldbg p-2'>
+          <div className='relative mt-[-270px] helloworldbg p-2 pb-14'>
             <div className='pt-32'>
               <div className='Montserrat font-medium text-[20px] leading-[30px] text-[#AAAAAA]'>
                 Welcome to a memeverse experience for the masses.
@@ -130,6 +130,41 @@ function WomeGlobeSection() {
               </div>
             </div>
           </div>
+          <footer className='text-center py-4 z-20 relative pt-[1.75rem]'>
+            <div className="flex justify-center items-end mt-4">
+              <button
+                type="button"
+                className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+              >
+                <a href='https://x.com/WOMEonSOL' target='_blank'>
+                  <FaXTwitter size={25} />
+                </a>
+              </button>
+              <button
+                type="button"
+                className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+              >
+                <a href='#'>
+                  <FaDiscord size={25} />
+                </a>
+              </button>
+              <button
+                type="button"
+                className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+              >
+                <a href='#'>
+                  <FaTelegramPlane size={25} />
+                </a>
+              </button>
+              <button
+                type="button"
+                className="hidden flex me-3 w-72 items-center justify-between py-2.5 px-5 text-sm font-medium text-gray-300 focus:outline-none bg-white rounded-full border border-gray-300 hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
+              >
+                <span>Search</span>
+                <FaSearch size={20} className="ml-2" />
+              </button>
+            </div>
+          </footer>
         </>
       )}
     </section>
