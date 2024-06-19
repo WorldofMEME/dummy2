@@ -9,19 +9,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 6; /* Highest z-index to ensure the video is on top */
+  z-index: 10; /* Highest z-index to ensure the video is on top */
+  overflow: visible;
+}
+
+.womeglobe-section .video-container-mobile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10; /* Highest z-index to ensure the video is on top */
+  overflow: visible;
 }
 
 .womeglobe-section .video-globe {
-  width: 115%;
-  height: 115%;
+  width: 130%;
+  height: 130%;
   object-fit: contain; /* Ensure the video maintains aspect ratio and is fully visible */
-  z-index: 6; /* Ensure the video is on top */
+  z-index: 10; /* Ensure the video is on top */
 }
 
 .womeglobe-section .video-globe-mobile {
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   object-fit: contain; /* Ensure the video maintains aspect ratio and is fully visible */
   z-index: 6; /* Ensure the video is on top */
 }
@@ -98,7 +113,9 @@
 }
 
 .womeglobe-section .helloworldbg {
-  z-index: 2;
+  position: relative;
+  z-index: 1; /* Lower z-index to be overlapped by the GIF */
+  overflow: visible;
 }
 
 .desktop-bg {

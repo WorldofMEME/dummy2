@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../../assets/styles/WomeGlobeSection.css';
-import Dot from '../../assets/images/Dot.svg';
-import Globe from '../../assets/video/globe_VP100.webm';
-import GlobeGif from "../../assets/video/globedarklightinggifversion.gif"
+// import Dot from '../../assets/images/Dot.svg';
+// import Globe from '../../assets/video/globe_VP100.webm';
+import GlobeGif from "../../assets/video/globedarklightinggif_100.gif"
 import MobileBg from '../../assets/images/Mobile_Static_Background.png';
 import { isIOS } from 'react-device-detect';
 import { FaXTwitter, FaDiscord } from "react-icons/fa6";
@@ -28,7 +28,7 @@ function WomeGlobeSection() {
     <section className='womeglobe-section'>
       {!isMobile ? (
         <>
-          <div className='relative h-[100vh] flex items-center justify-center overflow-hidden desktop-bg'>
+          <div className='relative h-[100vh] flex items-center justify-center overflow-hidden desktop-bg mt-[10px]'>
             <div className='absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center overflow-hidden'>
               {/* <img
                 src={Dot}
@@ -41,12 +41,7 @@ function WomeGlobeSection() {
                 className='absolute w-[200px] md:top-[25rem] lg:top-[25rem] xl:top-[27rem] md:left-[42rem] lg:left-[52rem] xl:left-[70rem]'
               /> */}
               <div className='video-container'>              
-                {isIOS ? (
-                  <img src={`${GlobeGif}?${new Date().getTime()}`} className='video-globe-mobile' alt='globe' />
-                ): (
-                  // <video src={Globe} className='video-globe' autoPlay loop muted /> 
-                  <img src={`${GlobeGif}?${new Date().getTime()}`} className='video-globe' alt='globe' />
-                )}
+                <img src={`${GlobeGif}?${new Date().getTime()}`} className='video-globe' alt='globe' />
               </div>
               <div className='slide-text'>
                 <span className='animated-text'>Hello World</span>
@@ -57,7 +52,7 @@ function WomeGlobeSection() {
               </div>
             </div>
           </div>
-          <div className='bg-[#D9E0EC33] relative mt-[-20px] helloworldbg'>
+          <div className='bg-[#D9E0EC33] relative mt-[-72px] helloworldbg'>
             <div className='py-12'>
               <div className='helloworld-text md:text-[6.125rem] lg:text-[8rem] xl:text-[100px]'>
                 Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World
@@ -112,11 +107,7 @@ function WomeGlobeSection() {
             <div className='absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center overflow-hidden'>
               <img src={MobileBg} alt='mobile-background' className='absolute inset-0 w-full h-full object-cover' />
               <div className='video-container-mobile'>
-                {isIOS ? (
-                  <img src={GlobeGif} className='video-globe' alt='globe' />
-                ): (
-                  <video src={Globe} className='video-globe' autoPlay loop muted /> 
-                )}
+                <img src={`${GlobeGif}?${new Date().getTime()}`} className='video-globe-mobile' alt='globe' data-mode="video" />
               </div>
             </div>
           </div>
