@@ -1,29 +1,32 @@
 .content1 {
   position: relative;
-  height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color:white;
+  justify-content: flex-start;
+  background-color: white;
+  overflow: hidden;
 }
 
 .animation-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
+  /* overflow: hidden; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  margin-top: 34vh;
 }
 
 .slide-text {
   display: inline-block;
   white-space: nowrap;
   animation: slide 20s linear infinite;
-  z-index: 0; /* Ensure text is behind the image */
+  z-index: 2; /* Ensure text is behind the image */
 }
 
 @keyframes slide {
@@ -31,7 +34,7 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-20%);
+    transform: translateX(-100%);
   }
 }
 
@@ -47,16 +50,27 @@
              2px -2px 0 rgba(158, 191, 38, 1);
 }
 
+.text-content {
+  background-color: #D9E0EC33;
+  position: relative;
+  width: 100%;
+  /* z-index: 3; */
+  margin-top: 16vh;
+}
+
 .helloworld-text {
   font-family: 'Librestile', sans-serif;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
-  margin: 0 50px;
   text-shadow: 2px 2px 0 rgba(161, 161, 161, 1),
     -2px -2px 0 rgba(161, 161, 161, 1),
     -2px 2px 0 rgba(161, 161, 161, 1),
     2px -2px 0 rgba(161, 161, 161, 1);
-  z-index: 3; /* Ensure the text is behind the video */
+  margin: 20px 0;
+}
+
+.Montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .desktop-bg {
@@ -66,18 +80,22 @@
   background-size: cover;
 }
 
-.desktop-bg-mobile {
-  background-image: url("../images//Mobile_Static_Background.png");
+.mobile-bg {
+  background-image: url("../images/Mobile_Static_Background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.content-container {
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 100%;
-  z-index: 3; /* Ensure content container is on top of background */
+@media (max-width: 640px) {
+  .animation-container {
+    width: 90%;
+    height: 40vh; /* Adjusted height for smaller screens */
+    max-height: 60vh; /* Limit maximum height on smaller screens */
+    margin-top: 10vh; /* Adjusted margin top */
+  }
+
+  .text-content {
+    background-color: #ffffff00;
+  }
 }
