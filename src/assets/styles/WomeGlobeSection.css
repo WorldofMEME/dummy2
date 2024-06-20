@@ -39,19 +39,18 @@
 }
 
 .animated-text {
-  font-family: 'Librestile', sans-serif;
+  font-family: "Librestile", sans-serif;
   font-size: 80px;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
   margin: 0 50px;
-  text-shadow: 2px 2px 0 rgba(158, 191, 38, 1), 
-             -2px -2px 0 rgba(158, 191, 38, 1), 
-             -2px 2px 0 rgba(158, 191, 38, 1), 
-             2px -2px 0 rgba(158, 191, 38, 1);
+  text-shadow: 2px 2px 0 rgba(158, 191, 38, 1),
+    -2px -2px 0 rgba(158, 191, 38, 1), -2px 2px 0 rgba(158, 191, 38, 1),
+    2px -2px 0 rgba(158, 191, 38, 1);
 }
 
 .text-content {
-  background-color: #D9E0EC33;
+  background-color: #d9e0ec33;
   position: relative;
   width: 100%;
   /* z-index: 3; */
@@ -59,18 +58,17 @@
 }
 
 .helloworld-text {
-  font-family: 'Librestile', sans-serif;
+  font-family: "Librestile", sans-serif;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
   text-shadow: 2px 2px 0 rgba(161, 161, 161, 1),
-    -2px -2px 0 rgba(161, 161, 161, 1),
-    -2px 2px 0 rgba(161, 161, 161, 1),
+    -2px -2px 0 rgba(161, 161, 161, 1), -2px 2px 0 rgba(161, 161, 161, 1),
     2px -2px 0 rgba(161, 161, 161, 1);
   margin: 20px 0;
 }
 
 .Montserrat {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .desktop-bg {
@@ -92,7 +90,8 @@
     width: 90%;
     height: 40vh; /* Adjusted height for smaller screens */
     max-height: 60vh; /* Limit maximum height on smaller screens */
-    margin-top: 10vh; /* Adjusted margin top */
+    margin-top: 10vh;
+    background-position: center;
   }
 
   .text-content {
