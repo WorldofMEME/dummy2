@@ -1,94 +1,30 @@
-.womeglobe-section .video-container,
-.womeglobe-section .video-container-mobile {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
+.content1 {
+  position: relative;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10; /* Highest z-index to ensure the video is on top */
-  overflow: visible;
+  /* overflow: hidden; */
+  background-color:white;
 }
 
-.womeglobe-section .video-container-mobile {
+.animation-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120%;
-  height: 120%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10; /* Highest z-index to ensure the video is on top */
-  overflow: visible;
+  overflow: hidden;
 }
 
-.womeglobe-section .video-globe {
-  width: 130%;
-  height: 130%;
-  object-fit: contain; /* Ensure the video maintains aspect ratio and is fully visible */
-  z-index: 10; /* Ensure the video is on top */
-}
-
-.womeglobe-section .video-globe-mobile {
-  width: 120%;
-  height: 120%;
-  object-fit: contain; /* Ensure the video maintains aspect ratio and is fully visible */
-  z-index: 6; /* Ensure the video is on top */
-}
-
-.womeglobe-section .animated-text {
-  font-family: 'Librestile', sans-serif;
-  font-size: 80px;
-  font-weight: bold;
-  color: hsl(0, 0%, 100%);
-  margin: 0 50px;
-  text-shadow: 2px 2px 0 rgba(158, 191, 38, 1),
-    -2px -2px 0 rgba(158, 191, 38, 1),
-    -2px 2px 0 rgba(158, 191, 38, 1),
-    2px -2px 0 rgba(158, 191, 38, 1);
-  z-index: 4; /* Ensure the text is behind the video */
-}
-
-.womeglobe-section .rotating-image,
-.womeglobe-section .rotating-image-mobile {
-  position: absolute;
-  top: 50%; /* Adjust positioning as needed */
-  left: 50%; /* Adjust positioning as needed */
-  transform: translate(-50%, -50%);
-  animation: rotate 20s linear infinite; /* Adjust duration and timing function as needed */
-  z-index: 5; /* Ensure the image is behind the video */
-}
-
-.womeglobe-section .rotating-image {
-  height: 90vh;
-  width: 90vh;
-}
-
-.womeglobe-section .rotating-image-mobile {
-  height: 50vh;
-  width: 50vh;
-}
-
-/* Keyframes for rotating animation */
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-.womeglobe-section .slide-text {
+.slide-text {
   display: inline-block;
   white-space: nowrap;
   animation: slide 20s linear infinite;
-  z-index: 4; /* Ensure text is behind the video */
+  z-index: 0; /* Ensure text is behind the image */
 }
 
 @keyframes slide {
@@ -100,7 +36,19 @@
   }
 }
 
-.womeglobe-section .helloworld-text {
+.animated-text {
+  font-family: 'Librestile', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+  margin: 0 50px;
+  text-shadow: 2px 2px 0 rgba(158, 191, 38, 1), 
+             -2px -2px 0 rgba(158, 191, 38, 1), 
+             -2px 2px 0 rgba(158, 191, 38, 1), 
+             2px -2px 0 rgba(158, 191, 38, 1);
+}
+
+.helloworld-text {
   font-family: 'Librestile', sans-serif;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
@@ -112,17 +60,17 @@
   z-index: 3; /* Ensure the text is behind the video */
 }
 
-.womeglobe-section .helloworldbg {
-  position: relative;
-  z-index: 1; /* Lower z-index to be overlapped by the GIF */
-  overflow: visible;
-}
-
 .desktop-bg {
   background-image: url("../images/Desktop_bg.png");
-  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.desktop-bg-mobile {
+  background-image: url("../images//Mobile_Static_Background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* position: relative; */
+  height: 90%;
 }
