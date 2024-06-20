@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
   background-color:white;
 }
 
@@ -17,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .slide-text {
@@ -64,7 +63,7 @@
   background-image: url("../images/Desktop_bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .desktop-bg-mobile {
@@ -72,5 +71,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90%;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  z-index: 3; /* Ensure content container is on top of background */
 }
