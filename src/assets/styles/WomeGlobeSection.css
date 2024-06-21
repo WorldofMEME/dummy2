@@ -101,7 +101,7 @@
 
 @media (min-width: 2560px) {
   .animation-container img {
-    width: 1800px;
+    width: 100%;
   }
 
   .animated-text {
