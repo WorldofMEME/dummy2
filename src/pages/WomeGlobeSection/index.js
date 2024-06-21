@@ -20,7 +20,7 @@ function WomeGlobeSection() {
   const isMobile = width <= 640;
 
   return (
-    <section className={`content1 xs:pt-[4rem] md:pt-[18rem] lg:pt-[19rem] xl:pt-[9.5rem]  ${isMobile ? 'mobile-bg' : 'desktop-bg'}`}>
+    <section className={`content1 xs:pt-[4rem] md:pt-[18rem] lg:pt-[19rem] xl:pt-[2rem]  ${isMobile ? 'mobile-bg' : 'desktop-bg'}`}>
       <div className='animation-container'>
         <div className='absolute'>
           <img src={`${GlobeGif}?${new Date().getTime()}`} className='relative z-10' alt='globe' />
