@@ -34,7 +34,7 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-20%);
   }
 }
 
@@ -87,7 +87,7 @@
 
 @media (max-width: 640px) {
   .animation-container {
-    width: 90%;
+    width: 126%;
     height: 40vh; /* Adjusted height for smaller screens */
     max-height: 60vh; /* Limit maximum height on smaller screens */
     margin-top: 10vh;
