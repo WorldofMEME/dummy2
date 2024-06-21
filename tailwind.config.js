@@ -11,6 +11,7 @@ module.exports = {
         md: { min: "768px" }, // iPads, Tablets
         lg: { min: "1024px" }, // Small screens, laptops
         xl: { min: "1280px" }, // Desktops, large screens
+        xxl: { min: "2560px" },
       },
     },
   },

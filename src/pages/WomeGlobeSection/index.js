@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../../assets/styles/WomeGlobeSection.css';
 import GlobeGif from "../../assets/video/globedarklightinggif_100.gif";
+import GlobeGif150 from "../../assets/video/globedarklightinggif_150.gif";
 import MobileBg from '../../assets/images/Mobile_Static_Background.png';
 
 function WomeGlobeSection() {
@@ -18,12 +19,18 @@ function WomeGlobeSection() {
   }, []);
 
   const isMobile = width <= 640;
+  const is2K = width >= 2560;
 
   return (
-    <section className={`content1 xs:pt-[4rem] md:pt-[18rem] lg:pt-[19rem] xl:pt-[9.5rem]  ${isMobile ? 'mobile-bg' : 'desktop-bg'}`}>
+    <section className={`content1 xs:pt-[4rem] md:pt-[18rem] lg:pt-[18rem] xl:pt-[10rem] xxl:pt-[10rem]  ${isMobile ? 'mobile-bg' : 'desktop-bg'}`}>
       <div className='animation-container'>
         <div className='absolute'>
-          <img src={`${GlobeGif}?${new Date().getTime()}`} className='relative z-10' alt='globe' />
+          {/* <img src={`${GlobeGif}?${new Date().getTime()}`} className='relative z-10' alt='globe' /> */}
+          <img 
+            src={`${is2K ? GlobeGif150 : GlobeGif}?${new Date().getTime()}`} 
+            className='relative z-10' 
+            alt='globe' 
+          />
         </div>
         <div className="slide-text">
           <span className="animated-text">Hello World</span>
