@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaXTwitter, FaDiscord } from "react-icons/fa6";
-import { FaTelegramPlane } from "react-icons/fa";
+import { FaTelegramPlane, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -18,15 +18,15 @@ function Footer() {
           type="button"
           className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
         >
-          <a href='#'>
-            <FaDiscord size={25} />
+          <a href='https://www.instagram.com/wome.sol?igsh=d2VsM3Z1MGg1dnlo' target='_blank'>
+            <FaInstagram size={25} />
           </a>
         </button>
         <button
           type="button"
           className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
         >
-          <a href='#'>
+          <a href='#' target='_blank'>
             <FaTelegramPlane size={25} />
           </a>
         </button>

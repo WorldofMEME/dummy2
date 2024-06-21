@@ -3,7 +3,7 @@ import '../assets/styles/Navbar.css';
 import { Disclosure } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
 import { FaXTwitter, FaDiscord } from "react-icons/fa6";
-import { FaTelegramPlane, FaSearch } from "react-icons/fa";
+import { FaTelegramPlane, FaSearch, FaInstagram } from "react-icons/fa";
 import { CgMenuRightAlt } from "react-icons/cg";
 import logo from "../assets/images/logo.svg";
 
@@ -78,7 +78,7 @@ export default function Navbar() {
                   className="hidden p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
                   <a href="#">
-                    <FaDiscord size={20} />
+                    <FaInstagram size={20} />
                   </a>
                 </button>
                 <button
@@ -133,15 +133,15 @@ export default function Navbar() {
                   type="button"
                   className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <a href="#">
-                    <FaDiscord size={25} />
+                  <a href="https://www.instagram.com/wome.sol?igsh=d2VsM3Z1MGg1dnlo" target='_blank'>
+                    <FaInstagram size={25} />
                   </a>
                 </button>
                 <button
                   type="button"
                   className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
                 >
-                  <a href="#">
+                  <a href="#" target='_blank'>
                     <FaTelegramPlane size={25} />
                   </a>
                 </button>
