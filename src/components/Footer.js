@@ -26,7 +26,7 @@ function Footer() {
           type="button"
           className="p-2 me-3 text-sm font-medium text-black focus:outline-none bg-white hover:bg-white hover:text-gray-400 focus:z-10 focus:ring-4 focus:ring-gray-100"
         >
-          <a href='#' target='_blank'>
+          <a href='https://t.me/Worldofmemesol' target='_blank'>
             <FaTelegramPlane size={25} />
           </a>
         </button>
