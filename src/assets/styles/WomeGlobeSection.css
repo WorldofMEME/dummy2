@@ -98,3 +98,35 @@
     background-color: #ffffff00;
   }
 }
+
+@media (min-width: 2560px) {
+  .animation-container img {
+    width: 1800px;
+  }
+
+  .animated-text {
+    font-size: 4vw; /* Adjust font size for larger screens */
+  }
+
+  .helloworld-text {
+    font-size: 8rem; /* Adjust font size for larger screens */
+  }
+
+  .text-content {
+    margin-top: 19vh;
+  }
+}
+
+@media (min-width: 3840px) {
+  .animation-container {
+    margin-top: 10vh; /* Adjust margin for larger screens */
+  }
+
+  .animated-text {
+    font-size: 3vw; /* Adjust font size for larger screens */
+  }
+
+  .helloworld-text {
+    font-size: 6rem; /* Adjust font size for larger screens */
+  }
+}

@@ -23,7 +23,7 @@ export default function Navbar() {
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-            <div className="relative flex items-center justify-between h-16">
+            <div className="relative flex items-center justify-between h-16 2xl:h-24">
               <div className="hidden absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button
@@ -57,7 +57,7 @@ export default function Navbar() {
                     alt="Workflow"
                   />
                   <img
-                    className="hidden lg:block h-12 w-12"
+                    className="hidden lg:block h-12 w-12 2xl:h-20 2xl:w-20"
                     src={logo}
                     alt="Workflow"
                     width={30}
