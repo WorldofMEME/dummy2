@@ -85,18 +85,17 @@
   background-size: cover;
 }
 
-@media (max-width: 640px) {
-  .animation-container {
-    width: 126%;
-    height: 40vh; /* Adjusted height for smaller screens */
-    max-height: 60vh; /* Limit maximum height on smaller screens */
-    margin-top: 10vh;
-    background-position: center;
-  }
-
-  .text-content {
-    background-color: #ffffff00;
-  }
+.animation-container-mobile {
+  width: 120%;
+  height: 40vh; /* Adjusted height for smaller screens */
+  max-height: 60vh; /* Limit maximum height on smaller screens */
+  margin-top: 10vh;
+  background-position: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @media (min-width: 2560px) {
