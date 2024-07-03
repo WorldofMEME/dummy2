@@ -45,8 +45,8 @@ function WomeGlobeSection() {
           <div className='text-content'>
             <div className='relative'>
               <div className='my-12 xs:px-4'>
-                <div className='helloworld-text sm:text-[40px] md:text-[6.125rem] lg:text-[6rem] xl:text-[8rem] 2xl:text-[10rem]'>
-                  Hello World
+                <div className='helloworld-text sm:text-[40px] md:text-[6.125rem] lg:text-[6rem] xl:text-[8rem] 2xl:text-[10rem] md:h-[8rem] lg:h-[10rem] xl:h-[12rem] 2xl:h-[14rem]'>
+                  {/* Hello World */}
                 </div>
                 <div className='Montserrat font-medium xs:text-[20px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[28px] 2xl:text-[30px] md:leading-[28px] lg:leading-[32px] xl:leading-[34.13px] text-[#AAAAAA]'>
                   Welcome to a memeverse experience for the masses.
