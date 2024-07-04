@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import '../../assets/styles/WomeGlobeSection.css';
-import GlobeGif from "../../assets/video/globedarklightinggif_100.gif";
-import GlobeGif150 from "../../assets/video/globedarklightinggif_150.gif";
+// import GlobeGif from "../../assets/video/globedarklightinggif_100.gif";
+import GlobeGif from "../../assets/video/globeupdated100.gif";
+// import GlobeGif150 from "../../assets/video/globedarklightinggif_150.gif";
+import GlobeGif150 from "../../assets/video/globeupdated150.gif";
 import MobileBg from '../../assets/images/Mobile_Static_Background.png';
 
 function WomeGlobeSection() {
